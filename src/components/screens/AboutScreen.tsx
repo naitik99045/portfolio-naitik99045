@@ -5,7 +5,6 @@ import { PORTFOLIO_DATA } from "@/data/portfolioData";
 import {
   Building2,
   Bot,
-  Shield,
   Zap,
   ExternalLink,
   Globe,

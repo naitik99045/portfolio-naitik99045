@@ -7,12 +7,10 @@ import {
   Linkedin,
   Instagram,
   Terminal,
-  ExternalLink,
   Code2,
   Globe,
   Layers,
   Building2,
-  Bot,
   Zap,
 } from "lucide-react";
 import { LegalModal } from "./LegalModal";

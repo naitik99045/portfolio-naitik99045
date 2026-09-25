@@ -2,7 +2,7 @@
 
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment, ContactShadows, Float } from "@react-three/drei";
+import { Environment, ContactShadows } from "@react-three/drei";
 import { CameraController } from "./CameraController";
 import { LaptopModel } from "./Laptop/LaptopModel";
 

@@ -57,7 +57,7 @@ export const HeroBootScreen: React.FC = () => {
             </span>
           </div>
           <h1 className="text-2xl font-bold font-sans text-white tracking-tight">
-            Hi, I'm {PORTFOLIO_DATA.profile.name}
+            Hi, I&apos;m {PORTFOLIO_DATA.profile.name}
           </h1>
           <p className="text-zinc-300 text-xs sm:text-sm font-sans leading-relaxed">
             {PORTFOLIO_DATA.profile.bio}

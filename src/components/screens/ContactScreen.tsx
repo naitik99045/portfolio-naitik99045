@@ -229,7 +229,7 @@ export const ContactScreen: React.FC<ContactScreenProps> = ({
           <div className="space-y-4">
             <div className="space-y-1">
               <h2 className="text-xl font-bold text-white font-sans">
-                Let's Build Something Legendary Together
+                Let&apos;s Build Something Legendary Together
               </h2>
               <p className="text-xs text-zinc-400 font-mono">
                 Connect with Naitik Talreja for 3D spatial web contracts, enterprise AI automations & personal agents.

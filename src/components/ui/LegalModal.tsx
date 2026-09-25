@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { X, Shield, FileText } from "lucide-react";
 
 interface LegalModalProps {

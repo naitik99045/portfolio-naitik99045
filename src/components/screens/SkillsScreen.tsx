@@ -63,7 +63,7 @@ export const SkillsScreen: React.FC<SkillsScreenProps> = ({ searchQuery = "" }) 
       <div className="flex-1 py-4 overflow-y-auto space-y-4">
         {filteredCategories.length === 0 ? (
           <div className="h-48 flex flex-col items-center justify-center text-zinc-400 text-xs font-mono space-y-1">
-            <span>No skills matching "{activeQuery}"</span>
+            <span>No skills matching &quot;{activeQuery}&quot;</span>
             <span className="text-zinc-600 text-[11px]">Try: Vibe Coding, 3D Builder, Agents, MCP, Next.js</span>
           </div>
         ) : (

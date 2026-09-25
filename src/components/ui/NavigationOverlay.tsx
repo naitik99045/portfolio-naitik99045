@@ -11,8 +11,6 @@ import {
   Eye,
   Layers,
   Building2,
-  Shield,
-  FileText,
 } from "lucide-react";
 import { soundManager } from "./AudioController";
 import { LegalModal } from "./LegalModal";

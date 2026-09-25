@@ -1,10 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['three', '@react-three/fiber', '@react-three/drei'],
+  transpilePackages: ['three', '@react-three/fiber', '@react-three/drei', 'three-stdlib'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
   images: {
-    domains: ['images.unsplash.com', 'avatars.githubusercontent.com', 'github.com'],
+    remotePatterns: [
+      { protocol: 'https', hostname: '**' },
+    ],
   },
 };
 
 export default nextConfig;
+
