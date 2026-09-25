@@ -200,7 +200,7 @@ export const PORTFOLIO_DATA = {
   ] as ProgrammingLanguage[],
 
   readmeMarkdown: `
-# Naitik Talreja (@vibe-coder) 🚀
+# Naitik Talreja (@vibe-coder)
 ### Founder & CEO at Qwenton • Creative Technologist & 3D Architect
 
 > **Company Website:** [qwenton.shop](https://qwenton.shop)  
@@ -208,13 +208,13 @@ export const PORTFOLIO_DATA = {
 
 ---
 
-### 🏢 About Qwenton
+### [STARTUP: Qwenton]
 I am the owner and founder of **Qwenton** (https://qwenton.shop). At Qwenton, we build and sell:
 1. **Custom AI Automations:** End-to-end automation pipelines that save companies hundreds of hours of manual operations.
 2. **Autonomous Personal AI Agents:** Specialized agentic swarms capable of reading context, utilizing tools via Model Context Protocol (MCP), and executing business workflows.
 3. **3D Spatial Web Experiences:** Award-winning interactive 3D websites that transform standard websites into living, interactive digital products.
 
-### ⚡ The "Vibe-Coding" Standard
+### [ENGINEERING STANDARD: Vibe-Coding]
 I combine intuitive, high-speed agentic prompting with rigorous low-level engineering across C++, Python, Rust, and TypeScript. Zero dropped frames, clean architecture, and instant real-world value.
 
 ---
