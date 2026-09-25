@@ -2,7 +2,7 @@
 
 import React from "react";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
-import { Award, ShieldCheck, CheckCircle2, RotateCw, ExternalLink, Sparkles } from "lucide-react";
+import { Award, ShieldCheck, RotateCw } from "lucide-react";
 
 export const CertificationsScreen: React.FC = () => {
   const certifications = PORTFOLIO_DATA.certifications;
@@ -23,11 +23,11 @@ export const CertificationsScreen: React.FC = () => {
       </div>
 
       {/* Certifications 2x2 Large Card Grid */}
-      <div className="grid grid-cols-2 gap-5 my-auto py-2">
+      <div className="grid grid-cols-2 gap-4 my-auto py-2">
         {certifications.map((cert) => (
           <div
             key={cert.id}
-            className="p-5 rounded-xl bg-zinc-900/90 border-2 border-zinc-800 hover:border-zinc-700 transition-all flex flex-col justify-between space-y-4 shadow-lg shadow-black/40 hover:scale-[1.02]"
+            className="p-5 rounded-lg bg-[#0e1117] border border-zinc-800 hover:border-zinc-700 transition-colors flex flex-col justify-between space-y-4"
           >
             <div className="flex items-start justify-between">
               <div className="space-y-1.5">
@@ -44,19 +44,18 @@ export const CertificationsScreen: React.FC = () => {
                 </h3>
               </div>
 
-              {/* Glowing Badge Color Indicator */}
+              {/* Badge Color Indicator */}
               <div
-                className="w-4 h-4 rounded-full flex-shrink-0 shadow-[0_0_10px]"
+                className="w-3.5 h-3.5 rounded-full flex-shrink-0"
                 style={{
                   backgroundColor: cert.badgeColor,
-                  boxShadow: `0 0 12px ${cert.badgeColor}`,
                 }}
               />
             </div>
 
             <div className="flex items-center justify-between pt-3 border-t border-zinc-800 text-xs font-mono">
               <span className="text-zinc-400 font-medium">ID: {cert.credentialId}</span>
-              <div className="flex items-center space-x-1.5 text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/30">
+              <div className="flex items-center space-x-1.5 text-emerald-400 font-bold bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/30">
                 <ShieldCheck size={14} />
                 <span>Verified Credential</span>
               </div>
@@ -66,11 +65,11 @@ export const CertificationsScreen: React.FC = () => {
       </div>
 
       {/* 3D Decal Synchronization Banner */}
-      <div className="p-3.5 rounded-lg bg-zinc-900/80 border border-zinc-800 flex items-center justify-between text-xs font-mono text-zinc-300 shadow-inner">
+      <div className="p-3.5 rounded-lg bg-[#0e1117] border border-zinc-800 flex items-center justify-between text-xs font-mono text-zinc-300">
         <div className="flex items-center space-x-2.5 text-sky-400">
-          <RotateCw size={15} className="animate-spin" />
+          <RotateCw size={15} />
           <span className="font-semibold">
-            3D Decal Stickers rendered onto metallic shell with zero z-fighting (polygonOffset enabled)
+            3D Decal Stickers rendered onto metallic shell with zero z-fighting
           </span>
         </div>
         <span className="text-zinc-400 font-bold">4 Decals Active</span>

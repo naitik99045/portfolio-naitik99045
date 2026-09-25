@@ -1,0 +1,45 @@
+12:17:39.145 Running build in Washington, D.C., USA (East) – iad1
+12:17:39.146 Build machine configuration: 2 cores, 8 GB
+12:17:39.307 Cloning github.com/naitik99045/portfolio-naitik99045 (Branch: main, Commit: 82209a1)
+12:17:39.308 Previous build caches not available.
+12:17:39.674 Cloning completed: 367.000ms
+12:17:40.235 Running "vercel build"
+12:17:40.252 Vercel CLI 59.25.4
+12:17:40.618 Installing dependencies...
+12:17:44.072 npm warn deprecated three-mesh-bvh@0.7.8: Deprecated due to three.js version incompatibility. Please use v0.8.0, instead.
+12:17:49.858 
+12:17:49.860 added 189 packages in 9s
+12:17:49.861 
+12:17:49.861 31 packages are looking for funding
+12:17:49.861   run `npm fund` for details
+12:17:49.935 Detected Next.js version: 14.2.35
+12:17:49.942 Running "npm run build"
+12:17:50.104 
+12:17:50.104 > naitik-talreja-3d-portfolio@1.0.0 build
+12:17:50.104 > next build
+12:17:50.104 
+12:17:50.931 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+12:17:50.932 This information is used to shape Next.js' roadmap and prioritize features.
+12:17:50.932 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+12:17:50.933 https://nextjs.org/telemetry
+12:17:50.933 
+12:17:51.045   ▲ Next.js 14.2.35
+12:17:51.047 
+12:17:51.060    Creating an optimized production build ...
+12:18:13.871  ✓ Compiled successfully
+12:18:13.872    Skipping linting
+12:18:13.873    Checking validity of types ...
+12:18:19.496 Failed to compile.
+12:18:19.496 
+12:18:19.498 ./src/components/screens/CertificationsScreen.tsx:8:41
+12:18:19.498 Type error: Property 'certifications' does not exist on type '{ profile: { name: string; handle: string; moniker: string; company: string; companyUrl: string; role: string; title: string; location: string; status: string; bio: string; email: string; socials: { github: string; linkedin: string; instagram: string; startup: string; }; stats: { ...; }[]; }; ... 4 more ...; termina...'.
+12:18:19.498 
+12:18:19.499    6 |
+12:18:19.499    7 | export const CertificationsScreen: React.FC = () => {
+12:18:19.499 >  8 |   const certifications = PORTFOLIO_DATA.certifications;
+12:18:19.499      |                                         ^
+12:18:19.499    9 |
+12:18:19.500   10 |   return (
+12:18:19.500   11 |     <div className="h-full w-full p-8 flex flex-col justify-between bg-[#0a0c12] text-zinc-100 font-sans select-none">
+12:18:19.553 Next.js build worker exited with code: 1 and signal: null
+12:18:19.618 Error: Command "npm run build" exited with 1

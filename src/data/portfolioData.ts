@@ -25,6 +25,15 @@ export interface ProgrammingLanguage {
   accentColor: string;
 }
 
+export interface Certification {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  credentialId: string;
+  badgeColor: string;
+}
+
 export const PORTFOLIO_DATA = {
   profile: {
     name: "Naitik Talreja",
@@ -198,6 +207,41 @@ export const PORTFOLIO_DATA = {
       accentColor: "#86efac",
     },
   ] as ProgrammingLanguage[],
+
+  certifications: [
+    {
+      id: "ai-agents-architect",
+      title: "Autonomous AI Agents & MCP Systems Architect",
+      issuer: "Qwenton Core Engineering",
+      date: "2026",
+      credentialId: "QWN-AGT-99045",
+      badgeColor: "#38bdf8",
+    },
+    {
+      id: "spatial-3d-engineer",
+      title: "Single-Canvas WebGL & 3D Spatial Computing",
+      issuer: "Three.js / React Three Fiber Guild",
+      date: "2026",
+      credentialId: "R3F-SPATIAL-882",
+      badgeColor: "#10b981",
+    },
+    {
+      id: "polyglot-systems",
+      title: "Polyglot Low-Level Systems & Compute (C++, Rust, Go)",
+      issuer: "Systems Engineering Guild",
+      date: "2025",
+      credentialId: "SYS-POLYGLOT-771",
+      badgeColor: "#f59e0b",
+    },
+    {
+      id: "fullstack-cloud",
+      title: "Enterprise Full-Stack Cloud & Microservices",
+      issuer: "Next.js & Cloud Architecture",
+      date: "2025",
+      credentialId: "NX-CLOUD-554",
+      badgeColor: "#a855f7",
+    },
+  ] as Certification[],
 
   readmeMarkdown: `
 # Naitik Talreja (@vibe-coder)
