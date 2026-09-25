@@ -1,0 +1,45 @@
+12:28:06.817 Running build in Washington, D.C., USA (East) – iad1
+12:28:06.818 Build machine configuration: 2 cores, 8 GB
+12:28:06.939 Cloning github.com/naitik99045/portfolio-naitik99045 (Branch: main, Commit: 06d34ba)
+12:28:06.940 Previous build caches not available.
+12:28:08.834 Cloning completed: 1.895s
+12:28:09.415 Running "vercel build"
+12:28:09.437 Vercel CLI 59.25.4
+12:28:09.655 Installing dependencies...
+12:28:13.534 npm warn deprecated three-mesh-bvh@0.7.8: Deprecated due to three.js version incompatibility. Please use v0.8.0, instead.
+12:28:19.443 
+12:28:19.444 added 189 packages in 9s
+12:28:19.445 
+12:28:19.445 31 packages are looking for funding
+12:28:19.445   run `npm fund` for details
+12:28:19.523 Detected Next.js version: 14.2.35
+12:28:19.531 Running "npm run build"
+12:28:19.654 
+12:28:19.654 > naitik-talreja-3d-portfolio@1.0.0 build
+12:28:19.654 > next build
+12:28:19.654 
+12:28:20.367 Attention: Next.js now collects completely anonymous telemetry regarding usage.
+12:28:20.368 This information is used to shape Next.js' roadmap and prioritize features.
+12:28:20.368 You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+12:28:20.368 https://nextjs.org/telemetry
+12:28:20.368 
+12:28:20.433   ▲ Next.js 14.2.35
+12:28:20.434 
+12:28:20.449    Creating an optimized production build ...
+12:28:42.789  ✓ Compiled successfully
+12:28:42.791    Skipping linting
+12:28:42.792    Checking validity of types ...
+12:28:47.830 Failed to compile.
+12:28:47.831 
+12:28:47.831 ./src/components/screens/EducationScreen.tsx:4:26
+12:28:47.831 Type error: Module '"@/data/portfolioData"' has no exported member 'GitCommit'.
+12:28:47.831 
+12:28:47.831   2 |
+12:28:47.831   3 | import React, { useState } from "react";
+12:28:47.831 > 4 | import { PORTFOLIO_DATA, GitCommit } from "@/data/portfolioData";
+12:28:47.831     |                          ^
+12:28:47.831   5 | import { GitBranch, GitCommit as GitCommitIcon, Sparkles, Terminal } from "lucide-react";
+12:28:47.832   6 |
+12:28:47.832   7 | export const EducationScreen: React.FC = () => {
+12:28:47.875 Next.js build worker exited with code: 1 and signal: null
+12:28:47.935 Error: Command "npm run build" exited with 1

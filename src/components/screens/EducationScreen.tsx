@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import { PORTFOLIO_DATA, GitCommit } from "@/data/portfolioData";
-import { GitBranch, GitCommit as GitCommitIcon, Sparkles, Terminal } from "lucide-react";
+import { PORTFOLIO_DATA } from "@/data/portfolioData";
+import { GitBranch } from "lucide-react";
 
 export const EducationScreen: React.FC = () => {
-  const [selectedCommit, setSelectedCommit] = useState<string>(PORTFOLIO_DATA.gitLogTree[0].hash);
   const commits = PORTFOLIO_DATA.gitLogTree;
+  const [selectedCommit, setSelectedCommit] = useState<string>(commits[0]?.hash || "c98f12a");
 
   return (
     <div className="h-full w-full p-8 flex flex-col justify-between bg-[#0a0c12] text-zinc-100 font-mono text-xs select-none">
@@ -15,7 +15,7 @@ export const EducationScreen: React.FC = () => {
         <div className="flex items-center space-x-3 text-emerald-400">
           <GitBranch size={20} />
           <h2 className="text-lg font-bold tracking-tight text-white uppercase">
-            Education & Academic Timeline (`git log --graph --oneline`)
+            Education & Academic Timeline (git log --graph --oneline)
           </h2>
         </div>
         <p className="text-xs text-zinc-400">
@@ -33,10 +33,10 @@ export const EducationScreen: React.FC = () => {
               <div
                 key={commit.hash}
                 onClick={() => setSelectedCommit(commit.hash)}
-                className={`p-3.5 rounded-lg cursor-pointer transition-all border-2 flex items-start space-x-3.5 ${
+                className={`p-3.5 rounded-lg cursor-pointer transition-colors border flex items-start space-x-3.5 ${
                   isSelected
-                    ? "bg-zinc-900 border-sky-500 shadow-lg shadow-sky-500/10"
-                    : "bg-zinc-900/50 border-zinc-800 hover:bg-zinc-800/60 hover:border-zinc-700"
+                    ? "bg-[#121622] border-sky-400"
+                    : "bg-[#0e1117] border-zinc-800 hover:bg-zinc-850 hover:border-zinc-700"
                 }`}
               >
                 {/* Branch Graph Node Line */}
@@ -44,7 +44,7 @@ export const EducationScreen: React.FC = () => {
                   <div
                     className={`w-3.5 h-3.5 rounded-full border-2 ${
                       isSelected
-                        ? "bg-sky-400 border-white shadow-[0_0_8px_#38bdf8]"
+                        ? "bg-sky-400 border-white"
                         : "bg-zinc-700 border-zinc-500"
                     }`}
                   />
@@ -72,9 +72,10 @@ export const EducationScreen: React.FC = () => {
         </div>
 
         {/* Right Column: Commit Inspector */}
-        <div className="col-span-5 rounded-xl bg-[#07080b] border-2 border-zinc-800 p-5 flex flex-col justify-between shadow-xl">
+        <div className="col-span-5 rounded-lg bg-[#0e1117] border border-zinc-800 p-5 flex flex-col justify-between">
           {(() => {
             const current = commits.find((c) => c.hash === selectedCommit) || commits[0];
+            if (!current) return null;
             return (
               <div className="space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-zinc-800 text-xs text-zinc-300">
@@ -100,7 +101,7 @@ export const EducationScreen: React.FC = () => {
                   <span className="text-xs uppercase text-zinc-400 tracking-wider block mb-2 font-bold">
                     Academic Summary & Diff
                   </span>
-                  <p className="text-zinc-200 text-xs leading-relaxed font-sans bg-zinc-900/90 p-4 rounded-lg border border-zinc-700/80 shadow-inner">
+                  <p className="text-zinc-200 text-xs leading-relaxed font-sans bg-[#06070a] p-4 rounded border border-zinc-800">
                     {current.details}
                   </p>
                 </div>
@@ -110,7 +111,7 @@ export const EducationScreen: React.FC = () => {
 
           <div className="text-xs text-zinc-400 pt-3 border-t border-zinc-800 flex items-center justify-between">
             <span>Branch tree status</span>
-            <span className="text-emerald-400 font-bold">● Clean & Up to Date</span>
+            <span className="text-emerald-400 font-bold">[OK] Clean & Up to Date</span>
           </div>
         </div>
       </div>

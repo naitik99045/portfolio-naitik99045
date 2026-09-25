@@ -34,6 +34,15 @@ export interface Certification {
   badgeColor: string;
 }
 
+export interface GitCommit {
+  hash: string;
+  branch: string;
+  date: string;
+  message: string;
+  category: string;
+  details: string;
+}
+
 export const PORTFOLIO_DATA = {
   profile: {
     name: "Naitik Talreja",
@@ -242,6 +251,33 @@ export const PORTFOLIO_DATA = {
       badgeColor: "#a855f7",
     },
   ] as Certification[],
+
+  gitLogTree: [
+    {
+      hash: "c98f12a",
+      branch: "main/education",
+      date: "2024 - 2028",
+      message: "feat(degree): Bachelor of Technology in Computer Science & Engineering",
+      category: "Degree",
+      details: "Specializing in Distributed Systems, Artificial Intelligence, 3D Computer Graphics, and Low-Level Compilers.",
+    },
+    {
+      hash: "e44b892",
+      branch: "feat/qwenton-startup",
+      date: "2025 - 2026",
+      message: "feat(startup): Founded Qwenton (qwenton.shop) AI Automations & Personal Agents",
+      category: "Founder & CEO",
+      details: "Leading enterprise AI agent swarms, Model Context Protocol tooling, and single-canvas 3D spatial web architectures.",
+    },
+    {
+      hash: "a12c45e",
+      branch: "feat/vibe-coding",
+      date: "2025",
+      message: "feat(engineering): Advanced Vibe Coding & Polyglot Compute Arsenal",
+      category: "Systems Engineering",
+      details: "Mastering C++, Python, Rust, Go, TypeScript, and GLSL for high-performance zero-latency applications.",
+    },
+  ] as GitCommit[],
 
   readmeMarkdown: `
 # Naitik Talreja (@vibe-coder)
